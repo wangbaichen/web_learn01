@@ -24,7 +24,7 @@ section {
     width: 40px;
     height: 50px;
     float: right;
-    background: url(../img/打折优惠\(1\).png);
+    background: url(../img/打折优惠\(1\).png) no-repeat center;
 }
 
 #main{

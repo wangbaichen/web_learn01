@@ -1,0 +1,72 @@
+html{
+    font-size: 12px;
+}
+
+.news__navigate{
+    margin: 20px 0;
+}
+
+.news__title{
+    font-size: 1.5rem;
+    font: "雅黑";
+}
+
+.news__author-time{
+    margin:15px 0;
+    color:darkgrey;
+}
+
+.news__content{
+    font-size:1.5rem;
+}
+
+.news__comments-title{
+    margin: 15px 0;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.news__comments-tittle-pre{
+    display: inline-block;
+    height: 1.2rem;
+    width: 0.6rem;
+    background-color: #ccc;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.news__comment_image{
+    width:50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 15px 0 10px;
+    padding-top:10px;
+}
+
+.news__comment-item--main{
+    display: inline-block;
+}
+
+.news__comment-item--time{
+    float:left;
+}
+.news__comment-item--operation{
+    float:right
+}
+.news__comment-item--content{
+    margin:10px 0;
+    font-size:1.2rem;
+}
+.news__comment-item--time,.news__comment-item--operation{
+    color:#ccc;
+}
+
+.news__comment-item--operation{
+    cursor:pointer;
+}
+.operation__image{
+    width: 15px;
+    height: 15px;
+}
+.operation_button:hover{
+    color:red;
+}
