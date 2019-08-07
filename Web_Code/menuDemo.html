@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MenuDmeo</title>
+    <style>
+    ol{
+        list-style-type: none;
+        padding-left:0px; 
+    }
+
+    a{
+        text-decoration:none;
+        color: black;
+    }
+
+    li:horver{
+        background-color: cornsilk;
+        cursor: pointer;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <article>
+        <ol id="testol">
+            <li>熊大</li>
+            <li>熊二</li>
+            <li>光头强</li>
+        </ol>
+    </article>
+    
+</body>
+</html>
+<script>
+    document.getElementById("testol").addEventListener("click",event=>{
+        alter(event.target.innerHTML);
+    },false);
+
+</script>

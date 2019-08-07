@@ -1,0 +1,34 @@
+html,body,main{
+    height: 100%;
+    margin: 0;
+    font-size: 12px;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.top,.left-nav,.look-page,.bottom{
+    border: 1px solid #ccc;
+    margin: 2px;
+
+}
+.top{
+    height: 100px;
+}
+.main{
+    flex-grow: 1;
+    display:flex;
+    flex-direction: row;
+}
+.left-nav{
+    width: 100px;
+}
+
+.look-page{
+    flex-grow: 1;
+
+}
+.bottom{
+    height: 30px;
+}
