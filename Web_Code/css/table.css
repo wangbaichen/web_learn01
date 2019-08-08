@@ -1,0 +1,99 @@
+.myTbale{
+    width: 100%;
+    
+}
+
+.myTbale,.myTbale td,.myTbale th{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+.myTbale td,.myTbale th{
+    height: 30px;
+}
+.myTbale>thead>tr {
+    background-color: rgb(78, 149, 241);
+    color: white;
+}
+.myTbale>tbody>tr:nth-child(odd){
+    background-color: ivory;
+}
+.myTbale>tbody>tr:hover {
+    cursor: pointer;
+    background-color: lightpink;
+}
+.myTbale td {
+    text-align: center;
+}
+
+.myTbale td{
+    text-align: center;
+}
+.myTbale>tfoot td{
+    height: 40px;
+}
+.buttonGroup {
+    display: inline-block;
+    cursor: pointer;
+}
+.operationGroup{
+    margin-left: 20px;
+    float:left;
+
+}
+.pageGroup{
+    margin-right: 20px;
+    float: right;
+}
+
+.copy-img{
+    display: inline-block;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/small_icons.jpg) no-repeat -19px -80px/500px 500px;
+}
+.add-img{
+    display: inline-block;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/small_icons.jpg) no-repeat -136px -145px/500px 500px;
+}
+.divButton_text{
+    vertical-align: 5px;
+    height: 20px;
+    margin:0 2px;
+
+}
+.delete-img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/small_icons.jpg) no-repeat -136px -16px/500px 500px;
+}
+.pageNumber {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.pageNumber_disable {
+    color: lightgray;
+    cursor: default;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    margin: 0 3px;
+}
+.pageNumber_text {
+    line-height: 30px;
+    vertical-align: middle;
+    font-weight: 600;
+    user-select: none;
+}
+.pageNumber:active {
+    box-shadow: #ccc 0px 0px 1px;
+}
