@@ -1,0 +1,192 @@
+/*
+
+css初始化
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+.clearfix:before,.clearfix:after{
+    display: table;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+a {
+    color: #050505;
+    text-decoration: none;
+}
+input {
+    border: 0;  /* 所有的表单边框为0 */
+    box-sizing: content-box; /* CSS3盒子模型 border 和 padding 都包含到 width 里面去 */
+}
+.container {  /* 因为我们的版心宽度都是1200 都要居中对齐 我们就声明一个公共类 */
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    background-color: #f3f5f7;
+}
+
+/* 头部分 */
+header{
+    height: 100px;
+    background-color: #f3f5f7;
+    overflow: hidden;
+}
+nav{
+    width: 1366px;
+    height: 42px;
+/*     background-color: purple; */
+    margin: 26px auto;
+}
+.logo{
+    float: left;
+}
+.navbar{
+    float: left;
+    height: 42px;
+    line-height: 42px;/*行高给父亲，行高会继承*/
+    margin-left: 50px;
+}
+.navbar li {
+    float: left;/*让这个 课程 首页 在一行内显示*/
+
+}
+.navbar li a{
+    padding: 0 8px 0;
+
+    display: block;/*a是行内元素，给高需要转换为块级*/
+    height: 42px;
+}
+.navbar li a:hover{
+    border-bottom: 2px solid #00a4ff;/*形成一个鼠标放上去就会显示的效果*/
+}
+
+/* 搜索框部分开始 */
+.search {
+    width: 410px;  /* 360 + 50 */
+    height: 38px;
+    border: 1px solid #00a4ff;
+    float: right;
+}
+.search input[type=text] {  /* 属性选择器  type 为 text 的文本框 */
+    /* background-color: pink; */
+    width: 360px;
+    height: 38px;
+
+    float: left;
+}
+.search input[type=submit]{/* 属性选择器  type 为 submit 的文本框 */
+    width: 50px;
+    height: 38px;
+    float: left;
+    background: #00a4ff url(../xc-img/search_06.png) center center no-repeat;
+} 
+
+/* 个人中心开始 */
+.personal {
+    float: right;
+    height: 42px;
+    line-height: 42px;  /* 这个行高给父亲， 行高会继承 */
+    margin: 0 15px 0 35px;  /* 上0 右 15  下0 左  35 */
+}
+.personal img {
+    margin: 0 8px;
+}
+/* 个人中心结束 */
+
+/* banner开始 */
+/* 左侧选择栏 */
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner-in{
+    height: 420px;
+    background-image: url("/xc-img/banner_03.png") ;
+}
+.slidebar{
+    float: left;
+    height: 420px;
+    width: 190px;
+    background:rgba(0, 0, 0, 0.4);/* 盒子背景半透明 */
+}
+.slidebar li a{
+    color: ivory;
+    font-size: 14px;
+    padding: 1.5px 20px 0;
+/*     a是行内元素   没有大小需要自己转换*/
+    display: block;
+    line-height: 45px;/* 个人经验，在单行垂直居中，有了行高不需要给高度 因为行高会把它撑开 */
+}
+.slidebar li a:hover{
+    color: #00a4ff;
+}
+.slidebar li a span{
+    float: right;
+    font-family: arial;
+}
+/* 课程表 */
+.timetable {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+.timetable dt {
+    height: 50px;
+    line-height: 50px;
+    background-color: #9bceea;
+    text-align: center; /* 文字水平居中 */
+    color: #fff;
+    font-weight: 700;  /* 文字加粗 */
+    letter-spacing: 2px; /* 设置字间距 */
+    margin-bottom: 5px;
+}
+.timetable dd {
+    width: 193px;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.timetable dd:last-child { /* 结构伪类选择器 选最后一个孩子 但是要求这个孩子是dd */
+    border: 0;
+}
+.timetable dd h4 {
+    font-size: 16px;
+    font-weight: normal;  /*  让粗体不变粗 */
+    color: #4e4e4e;
+}
+.timetable dd p {
+    color: #a5a5a5;
+    font-size: 14px;
+}
+.timetable dd a {
+    height: 38px;
+    border: 1px solid #00a4ff;
+    display: block;
+    text-align: center;/* 水平居中 */
+    line-height: 38px;/* 垂直居中 */
+    color: #00a4ff;
+    font-weight: 700; /* 文字加粗 700 不要加单位 */ 
+
+    /* ctrl+g 快速到某一行  */
+}
+.timetable dd a:hover { /* 自己添加 */
+    background-color: #00a4ff;
+    color: #fff;
+}
+/* banner结束 */
