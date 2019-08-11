@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- logo部分 -->
+        <nav class="logo">
+            <img src="/img/logo_blue.png" alt="">
+        </nav>
+    </header>
+    <div class="register-middle">
+            <section>
+                    <h1>用户信息注册</h1>
+                    <form action="" method="post">
+                        <fieldset>
+                            <legend hidden>用户注册</legend>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="width:100px;"><label for="userName" class="text">用户名：</label></td>
+                                        <td><input type="text" name="userName" id="userName" placeholder="请输入英文或数字组合信息" class="normal-input"></td>
+                                        <td>
+                                            <nav id="userNameMsg">
+                                                <div class="msgImage"></div>
+                                                <div class="msgInfo"></div>
+                                            </nav>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="nickName" class="text">昵称：</label></td>
+                                        <td><input type="text" name="nickName" id="nickName" placeholder="可以输入中文信息" class="normal-input"></td>
+                                        <td>
+                                            <nav id="nickNameMsg">
+                                                <div class="msgImage"></div>
+                                                <div class="msgInfo"></div>
+                                            </nav>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="password" class="text">密码：</label></td>
+                                        <td><input type="password" name="password" id="password" placeholder="请输入密码" class="normal-input"></td>
+                                        <td>
+                                            <nav id="passwordMsg">
+                                                <div class="msgImage"></div>
+                                                <div class="msgInfo"></div>
+                                            </nav>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="rePassword" class="text">重复密码：</label></td>
+                                        <td><input type="password" name="rePassword" id="rePassword" placeholder="请重复输入密码" class="normal-input"></td>
+                                        <td>
+                                            <nav id="rePasswordMsg">
+                                                <div class="msgImage"></div>
+                                                <div class="msgInfo"></div>
+                                            </nav>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text">性别：</td>
+                                        <td colspan="2">
+                                            <input type="radio" name="sex" id="man" value="1" class="normalRadio">
+                                            <label for="man" style="margin-left:10px;vertical-align: 12px;" class="text">男</label>&nbsp;&nbsp;
+                                            <input type="radio" name="sex" id="woman" value="2" class="normalRadio">
+                                            <label for="woman" style="margin-left:10px;vertical-align: 12px;" class="text">女</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="photo" class="text">手机号：</label></td>
+                                        <td><input type="text" name="photo" id="photo" placeholder="请输入电话号码" class="normal-input"></td>
+                                        <td>
+                                            <nav id="photoMsg">
+                                                <div class="msgImage"></div>
+                                                <div class="msgInfo"></div>
+                                            </nav>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="email" class="text">Email：</label></td>
+                                        <td><input type="email" name="email" id="email" placeholder="请输入邮箱地址" class="normal-input"></td>
+                                        <td>
+                                            <nav id="emailMsg">
+                                                <div class="msgImage"></div>
+                                                <div class="msgInfo"></div>
+                                            </nav>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="birthday" class="text">生日：</label></td>
+                                        <td colspan="2"><input type="date" name="birthday" id="birthday" class="normal-input"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text">爱好：</td>
+                                        <td colspan="2">
+                                            <input type="checkbox" name="hobby" id="music" class="normalCheckbox"><label for="music" class="text" style="margin-left:10px;vertical-align: 12px;">唱歌</label>&nbsp;
+                                            <input type="checkbox" name="hobby" id="sport" class="normalCheckbox"><label for="sport" class="text" style="margin-left:10px;vertical-align: 12px;">运动</label>&nbsp;
+                                            <input type="checkbox" name="hobby" id="code" class="normalCheckbox"><label for="code" class="text" style="margin-left:10px;vertical-align: 12px;">编码</label>&nbsp;
+                                            <input type="checkbox" name="hobby" id="book" class="normalCheckbox"><label for="book" class="text" style="margin-left:10px;vertical-align: 12px;">看书</label>&nbsp;
+                                            <input type="checkbox" name="hobby" id="debug" class="normalCheckbox"><label for="debug" class="text" style="margin-left:10px;vertical-align: 12px;">调bug</label>&nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="from" class="text">来自于：</label></td>
+                                        <td colspan="2">
+                                            <select name="province" id="province" class="normal-input" style="height: 40px;"></select>&nbsp;&nbsp;
+                                            <select name="city" id="city" class="normal-input" style="height: 40px;"></select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="remark" class="text">备注：</label></td>
+                                        <td colspan="2">
+                                            <textarea name="" cols="30" rows="8" placeholder="请输入备注信息" class="normal-input"></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                    </form>
+                    <nav colspan="3" style="text-align:center">
+                        <button type="reset" class="login-button">重置</button>&nbsp;&nbsp;
+                        <button type="submit" class="login-button">注册</button>
+                    </nav>
+                </section>
+
+    </div>
+</body>
+</html>
