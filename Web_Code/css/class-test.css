@@ -1,0 +1,135 @@
+/*
+
+css初始化
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+.clearfix:before,.clearfix:after{
+    display: table;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+body{
+    background-color: snow;
+
+}
+.container {  /* 因为我们的版心宽度都是1200 都要居中对齐 我们就声明一个公共类 */
+    width: 1200px;
+    margin: 0 auto;
+}
+a {
+    color: #050505;
+    text-decoration: none;
+}
+input {
+    border: 0;  /* 所有的表单边框为0 */
+    box-sizing: content-box; /* CSS3盒子模型 border 和 padding 都包含到 width 里面去 */
+}
+
+/* header部分开始 */
+header{
+    height: 100px;
+    overflow: hidden;
+   /*  background-color: ivory; */
+}
+nav{
+    width: 1316px;
+    height: 46px;
+/*     background-color: black; */
+    margin: 16px auto;
+}
+/* logo */
+.logo{
+    float: left;
+}
+/* navbar开始 */
+.navbar{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.navbar li{
+    float: left;
+    margin-left: 1px;
+}
+.navbar li a{
+    padding: 0 8px 0;
+    display: block;
+    height: 42px;
+    color: black;
+}
+.navbar li a:hover{
+    border-bottom: 2px solid blue;/*形成一个鼠标放上去就会显示的效果*/
+}
+/* 第二个logo */
+.logo2{
+    float: left;
+    margin-top: 6.5px;
+}
+
+/* 右侧的2个button */
+.navbutton-1{
+    background-color: #00a4ff;
+    border-radius: 15px;
+    padding: 2px 10px;
+    float: right;
+    text-align: center;
+    line-height:20px;
+    margin-top: 8.5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: aliceblue;
+    font-size: 13px;
+}
+.navbutton-2{
+    background-color: #10ee1b;
+    border-radius: 15px;
+    padding: 2px 10px;
+    float: right;
+    text-align: center;
+    line-height:20px;
+    margin-top: 8.5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: aliceblue;
+    font-size: 13px;
+}
+.home-login{
+    float: right;
+    text-align: center;
+    line-height:20px;
+    margin-top: 8.5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: aliceblue;
+}
+.home-login li{
+    float: right;
+}
+.home-login li a{
+    float: right;
+    text-align: center;
+    line-height:22px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: gray;
+}
+.split{
+height: 26px;
+width: 86px;
+margin: 20px auto;
+}

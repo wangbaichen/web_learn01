@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/class-test.css">
-    <title>class-test</title>
+    <title>经典测试</title>
 </head>
-<body>
-        <header>
+<body onload="init()">
+    <!--导航栏部分 -->
+    <header>
                 <nav><!-- 导航栏 -->
         
                     <!-- logo部分 -->
                     <div class="logo">
-                        <img src="/img/logo.png" alt="">
+                        <img src="/img/logo_blue_gaitubao_125x48.png" alt="">
                     </div>
         
                     <!-- 导航标签 -->
@@ -50,6 +51,43 @@
                     </div>
         
                 </nav>
-        </header>
+    </header>
+    <!-- 轮播图部分 -->
+    <section>
+        <div>
+            <img id="lunbotu" src="/img/banner-1.png" width="100%" height="100%"
+        </div>
+    </section>
+    <!-- 分割 -->
+    <div class="split">
+            <h3 style="display: inline-block;">
+            <img width='18px' src="/img/title-right.png "alt="">
+            全部
+            <img width="18px" src="/img/title-left.png" alt="">
+            </h3>
+    </div>
+    <!-- 题目部分 -->
+    <div class="test container">
+        <div>
+            <a href="/wenjuanwang/wenjuan1.html">  <img src="/img/section-1.png" alt=""></a>
+
+        </div>
+
+    </div>
+
+
 </body>
 </html>
+<script>
+    function init(){
+        setInterval("changeImg()",2000);
+    }
+    var i = 1;
+    function changeImg(){
+        i++;
+        document.getElementById("lunbotu").src="../img/banner-"+i+".png";
+        if(i==2){
+            i=0;
+        }
+    }
+</script>
