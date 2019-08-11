@@ -1,0 +1,19 @@
+/*css初始化*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+.clearfix:before,.clearfix:after{
+    display: table;
+    content: "";
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}

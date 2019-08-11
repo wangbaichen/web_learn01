@@ -21,6 +21,8 @@ ul{
 .clearfix{
     *zoom: 1;
 }
+
+
 a {
     color: #050505;
     text-decoration: none;
@@ -190,3 +192,24 @@ nav{
     color: #fff;
 }
 /* banner结束 */
+/* 精品推荐开始 */
+.recommend{
+    height: 60px;
+    line-height: 60px;/* 行高和高度相等，实现垂直居中 */
+    background-color: #fff;
+    margin-top: 8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    /* 盒子阴影 水平位置  垂直位置  模糊距离  影子颜色 */
+}
+.recommend a{
+    padding : 0 30px;
+    border-right: 1px solid #ccc;
+}
+.recommend a:hover {
+    color: #00a4ff;
+}
+.recommend :last-child{
+    float: right;
+    border: 0;
+    font-size: 14px;
+}
