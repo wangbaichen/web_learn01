@@ -114,6 +114,7 @@ nav{
     background-color: #1c036c;
 }
 .banner-in{
+    position: relative;
     height: 420px;
     background-image: url("/xc-img/banner_03.png") ;
 }
@@ -191,6 +192,34 @@ nav{
     background-color: #00a4ff;
     color: #fff;
 }
+
+/* 小圆点模块 */
+.circle{
+    width: 180px;
+    height: 22px;
+/*     background-color: pink; */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;/* 父盒子宽度的一般 */
+    margin-left: -90px;/* 水平居中 */
+
+}
+
+.circle li{ /* 0011权重 */
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin:6px 8px;
+    background: rgba(255, 255, 255, 0.4);
+/*     background-color: #00a4ff; */
+    border-radius: 50%;
+}
+.circle .current{
+    width: 19px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
 /* banner结束 */
 /* 精品推荐开始 */
 .recommend{
@@ -213,3 +242,128 @@ nav{
     border: 0;
     font-size: 14px;
 }
+
+
+/* 精品推荐模块 */
+.recom-products{
+    margin-top: 35px;
+
+}
+.recom-hd{
+    height: 40px;
+    color: #00a4ff;
+}
+.recom-hd h4{
+    float: left;
+}
+.recom-hd a{
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-right: 30px;
+}
+	/* 精品推荐主体部分 */
+    .recom-bd ul li {
+        width: 228px;
+        height: 270px;
+        background-color: #fff;
+        /*overflow: hidden;   溢出隐藏 */
+        /* box-shadow:水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色  内/外阴影； */
+        
+        float: left;
+        margin-right: 15px;
+        margin-top: 15px;
+        position: relative;  /* 子绝父相 */
+        transition: all 0.2s;
+        
+    }
+    .recom-bd ul li:hover {
+        margin-top: 10px;
+        box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    .over {
+        overflow: hidden;
+    }
+    .hot {
+        width: 40px;
+        height: 23px;
+        background-color: pink;
+        position: absolute;
+        right: -3px;
+        top: 5px;
+        background: url(images/sprite.png) no-repeat 0 -85px;
+    }
+    .recom-bd ul li:nth-child(5n) { /*  5n     n从0开始的， 0 1 2 3  5n 就是5 的倍数 */
+        margin-right: 0;/* 解决了最后一个会出现右外边距的问题 */
+    }
+
+    .recom-bd li h5, 
+    .recom-bd li p {
+        padding: 0 20px 0 24px;
+        margin-top: 12px;
+    }
+    .recom-bd li h5 {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: normal;
+    }
+    .recom-bd li p {
+        font-size: 12px;
+        color: #999;
+    }
+    .recom-bd  p span {
+        color: #ff7c2d;
+    }
+
+
+    /* 页面底部分 */
+			footer {
+				height: 270px;
+				background-color: #fff;
+				margin-top: 100px;
+			}
+			.footer-in {
+				padding-top: 30px;
+
+			}
+			.footer-l {
+				float: left;
+			}
+			.footer-l p {
+				font-size: 12px;
+				line-height: 18px;
+				color: #999;
+				margin-top: 20px;
+			}
+			.footer-l a {
+				display: block;
+				width: 118px;
+				height: 33px;
+				border: 1px solid #00a4ff;
+				font-size: 16px;
+				color: #00a4ff;
+				text-align: center;
+				line-height: 33px;
+				margin-top: 15px;
+			}
+			.footer-r {
+				float: right;
+				color: #333;
+			}
+			.footer-r dl {
+				float: left;
+				width: 225px;
+			}
+			.footer-r dt {
+				font-size: 16px;
+				height: 30px;
+			}
+			.footer-r dd {
+				font-size: 12px;
+				height: 20px;
+			}
+			.footer-r dd a:hover {
+				color: #00a4ff;
+				text-decoration: underline; /*  添加下划线 */
+			}
+			
